@@ -20,6 +20,7 @@
       <h2>Table of Contents</h2>
       <ol>
         <li><a href="#jsTestGetAge">How Old Am I Calculator</a></li>
+        <li><a href="#colorInvertClicker">Color Invert Clicker</a></li>
       </ol>
     </div>
     <br />
@@ -28,8 +29,34 @@
       <h2>How Old Am I Calculator</h2>
       Input Birth Year: <input type="text" id="yearText" placeholder="1993" />
       <p>Click the button to show age</p>
-      <button onclick="getAge()">My Age</button>
+      <button onclick="getAge()" class="ageButton">My Age</button>
       <p><strong id="myAge"></strong></p>
+    </div>
+    <br />
+    <div class="mainBox" id="colorInvertClicker">
+      <h2>Color Invert Clicker</h2>
+      <div class="grid-container" id="colorBoxes">
+        <div class="grid-item1 boxCyan" id="cyan">
+          <button onclick="changeColorCyan()" class="colorButtonCyan">
+            Cyan
+          </button>
+        </div>
+        <div class="grid-item2 boxYellow" id="yellow">
+          <button onclick="changeColorYellow()" class="colorButtonYellow">
+            Yellow
+          </button>
+        </div>
+        <div class="grid-item3 boxMagenta" id="magenta">
+          <button onclick="changeColorMagenta()" class="colorButtonMagenta">
+            Magenta
+          </button>
+        </div>
+        <div class="grid-item4 boxBlack" id="black">
+          <button onclick="changeColorBlack()" class="colorButtonBlack">
+            Black
+          </button>
+        </div>
+      </div>
     </div>
     <br />
     <div class="mainBox">

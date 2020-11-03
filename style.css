@@ -39,7 +39,7 @@ a {
   display: block;
 }
 
-button {
+.ageButton {
   background-color: #8448d9;
   border: none;
   color: white;
@@ -48,12 +48,150 @@ button {
   font-size: 12px;
 }
 
-button:hover {
+.ageButton:hover {
   background-color: #f2bea0;
 }
 
 a:hover {
   color: #f2bea0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 200px 200px;
+  grid-gap: 10px;
+}
+
+.grid-item1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.grid-item2 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.grid-item3 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.grid-item4 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.boxCyan {
+  padding: 0.5rem 0 0 1rem;
+  background-color: cyan;
+  border: solid;
+  border-color: cyan;
+  border-radius: 10px;
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.boxYellow {
+  padding: 0.5rem 0 0 1rem;
+  background-color: yellow;
+  border: solid;
+  border-color: yellow;
+  border-radius: 10px;
+  color: blue;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.boxMagenta {
+  padding: 0.5rem 0 0 1rem;
+  background-color: magenta;
+  border: solid;
+  border-color: magenta;
+  border-radius: 10px;
+  color: green;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.boxBlack {
+  padding: 0.5rem 0 0 1rem;
+  background-color: black;
+  border: solid;
+  border-color: black;
+  border-radius: 10px;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.colorButtonCyan {
+  background-color: cyan;
+  border: solid;
+  border-color: cyan;
+  border-radius: 10px;
+  color: red;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.colorButtonYellow {
+  background-color: yellow;
+  border: solid;
+  border-color: yellow;
+  border-radius: 10px;
+  color: blue;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.colorButtonMagenta {
+  background-color: magenta;
+  border: solid;
+  border-color: magenta;
+  border-radius: 10px;
+  color: green;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.colorButtonBlack {
+  background-color: black;
+  border: solid;
+  border-color: black;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.colorButtonCyan:hover {
+  background-color: red;
+  color: cyan;
+}
+
+.colorButtonYellow:hover {
+  background-color: blue;
+  color: yellow;
+}
+
+.colorButtonMagenta:hover {
+  background-color: green;
+  color: magenta;
+}
+
+.colorButtonBlack:hover {
+  background-color: white;
+  color: black;
 }
 
 /* width */
