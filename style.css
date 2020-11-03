@@ -1,0 +1,77 @@
+body {
+  font-family: Courier, monospace;
+  color: white;
+  background-color: #404459;
+}
+.header {
+  margin: 20px 40px 0 40px;
+  border: solid;
+  padding: 0 0 30px 0;
+  border-width: thick;
+  border-radius: 10px;
+  border-color: #8448d9;
+  background-color: #8448d9;
+  text-align: center;
+  color: white;
+}
+
+.mainBox {
+  border: solid;
+  border-color: #656b8c;
+  border-radius: 10px;
+  background-color: #656b8c;
+  color: white;
+  padding: 20px 20px 20px 20px;
+  margin: 0 40px 0 40px;
+}
+
+strong {
+  color: #f2bea0;
+}
+
+.hmar {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+button {
+  background-color: #8448d9;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  font-size: 12px;
+}
+
+button:hover {
+  background-color: #f2bea0;
+}
+
+a:hover {
+  color: #f2bea0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #404459;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8448d9;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8448d9;
+}

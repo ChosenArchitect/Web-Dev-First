@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cheat Sheet</title>
+  </head>
+  <body>
+    <div class="mainBox">
+      <a href="javascriptprojects.html">JavaScript Projects</a>
+      </div>
+    <div class="header" id="top">
+      <h1>HTML/CSS Cheat Sheet</h1>
+      <p>Reference Site </p>
+      <a href="https://www.w3schools.com/html/"><em>SchoolsW3<em></a>
+      <p>This Will Help Me Learn</p>
+    </div>
+    <br />
+    <br />
+    <div class="mainBox">
+      <h2>Table of Contents</h2>
+      <ol>
+        <li><a href="#htmlBasic">HTML Basic</a></li>
+        <li><a href="#htmlElements">HTML Elements</a></li>
+        <li><a href="#htmlAttributes">HTML Attributes</a></li>
+        <li><a href="#htmlStyle">HTML Style Attributes</a></li>
+        <li><a href="#htmlFormatting">HTML Formatting Elements</a></li>
+        <li>
+          <a href="#htmlQuotation">HTML Quotation and Citation Elements</a>
+        </li>
+        <li><a href="#htmlLinks">HTML Links</a></li>
+      </ol>
+    </div>
+    <br />
+    <div class="mainBox" id="htmlBasic">
+      <!-- The <p> element defines a paragraph -->
+      <h2>HTML Basic</h2>
+      <p>
+        HTML <strong>headings</strong> are defined with the < h1> to < h6 > tags.<br />
+        <br /><b>Examples of h tags 1-6:</b><br />
+      </p>
+      <h1 class="hmar">This is heading 1</h1>
+      <h2 class="hmar">This is heading 2</h2>
+      <h3 class="hmar">This is heading 3</h3>
+      <h4 class="hmar">This is heading 4</h4>
+      <h5 class="hmar">This is heading 5</h5>
+      <h6 class="hmar">This is heading 6</h6>
+      <p>
+        HTML links are defined with the < a >.<br />
+        <a href="#">This is a link</a>
+      </p>
+      <p>HTML images are defined with the < img ></p>
+      <img
+        src="https://pbs.twimg.com/profile_images/681704971960619011/ubBZvebH_400x400.png"
+        alt="ChosenArchitect logo"
+        width="50"
+        height="50"
+      />
+    </div>
+    <br />
+    <div class="mainBox" id="htmlElements">
+      <h2>HTML Elements</h2>
+      <p>
+        An HTML element is defined by a start tag, some content, and an end tag:
+        <br />
+        <br />
+        < tagname > Content goes here...< /tagname >
+        <br />
+        <br />
+        The HTML element is everything from the start tag to the end tag
+        <br />
+        <br />
+        <strong>Nested HTML Elements</strong>
+        <br />
+        <br />
+        HTML elements can be nested (this means that elements can contain other
+        elements).
+        <br />
+        <br />
+        All HTML documents consist of nested HTML elements.
+        <br />
+        <br />
+        <em><strong>Never Skip the End Tag</strong></em>
+        <br />
+        <br />
+        <strong>Empty HTML Elements</strong>
+        <br />
+        <br />
+        HTML elements with no content are called empty elements.
+        <br />
+        <br />
+        The tag defines a line break, and is an empty element without a closing
+        tag
+        <br />
+        <br />
+        <strong>HTML is Not Case Sensitive</strong>
+        <br />
+        <br />
+        HTML tags are not case sensitive: < P > means the same as < p >.
+        <br />
+        <br />
+        The HTML standard does not require lowercase tags, but W3C
+        <strong>recommends</strong> lowercase in HTML, and
+        <strong>demands</strong> lowercase for stricter document types like
+        XHTML.
+      </p>
+    </div>
+    <br />
+    <div class="mainBox" id="htmlAttributes">
+      <h2>HTML Attributes</h2>
+      <ul>
+        <li>All HTML elements can have <strong>attributes</strong></li>
+        <li>
+          Attributes provide <strong>additional information</strong> about
+          elements
+        </li>
+        <li>
+          Attributes are always specified in <strong>the start tag</strong>
+        </li>
+        <li>
+          Attributes usually come in name/value pairs like:
+          <strong>name="value"</strong>
+        </li>
+      </ul>
+      <p>
+        <strong>The href Attribute</strong>
+        <br />
+        <br />
+        The < a > tag defines a hyperlink. The href attribute specifies the URL
+        of the page the link goes to.
+        <br />
+        <br />
+        <strong>The src Attribute</strong>
+        <br />
+        <br />
+        The < img > tag is used to embed an image in an HTML page. The
+        <em>src</em> attribute specifies the path to the image to be displayed
+        <br />
+        <br />
+        There are two ways to specify the URL in the src attribute:
+        <br />
+        <br />
+        <strong>1. Absolute URL</strong> - Links to and external image that is
+        hosted on another website. Example:
+        src="http://www.w3schools.com/images/img_girl.jpg".
+        <br />
+        <br />
+        <strong>Notes:</strong> External images might be under copyright. If you
+        do not get permission to use it, you may be in violation of copyright
+        laws. In addition, you cannot control external images; it can suddenly
+        be removed or changed.
+        <br />
+        <br />
+        <strong>2. Relative URL</strong> - Links to an image that is hosted
+        within the website. Here, the URL does not include the domain name. If
+        the URL begins without a slash, it will be relative to the current page.
+        Example: src="img_girl.jpg". If the URL begins with a slash, it will be
+        relative to the domain. Example: src="/images/img_girl.jpg".
+        <br />
+        <br />
+        <strong>Tip:</strong> It is almost always best to use relative URLs.
+        They will not break if you change domain.
+        <br />
+        <br />
+        <strong>The width and hight Attributes</strong>
+        <br />
+        <br />
+        The < img > tag should also contain the width and height attributes,
+        which specifies the width and height of the image (in pixels).
+        <br />
+        <br />
+        <strong>The alt Attribute</strong>
+        <br />
+        <br />
+        The required alt attribute for the < img > tag specifies an alternate
+        text for an image, if the image for some reason cannot be displayed.
+        This can be due to slow connection, or an error in the src attribute, or
+        if the user uses a screen reader.
+        <br />
+        <br />
+        <strong>The style Attribute</strong>
+        <br />
+        <br />
+        The style attribute is used to add styles to an element, such as color,
+        font, size, and more.
+        <br />
+        <br />
+        <strong>The lang Attribute</strong>
+        <br />
+        <br />
+        You should always include the lang attribute inside the < html > tag, to
+        declare the language of the Web page. This is meant to assist search
+        engines and browsers.
+        <br />
+        <br />
+        Country codes can also be added to the language code in the lang
+        attribute. So, the first two characters define the language of the HTML
+        page, and the last two characters define the country.
+        <br />
+        <br />
+        <a href="https://www.w3schools.com/tags/ref_language_codes.asp"
+          >HTML Language Code Reference</a
+        >
+        <br />
+        <br />
+        <strong>The title Attribute</strong>
+        <br />
+        <br />
+        The title attribute defines some extra information about an element.
+        <br />
+        <br />
+        The value of the title attribute will be displayed as a tooltip when you
+        mouse over the element
+      </p>
+      <h2>Summary</h2>
+      <ul>
+        <li>All HTML elements can have attributes</li>
+        <li>
+          The href attribute of < a > specifies the URL of the page the link
+          goes to
+        </li>
+        <li>
+          The src attribute of < img > specifies the path to the image to be
+          displayed
+        </li>
+        <li>
+          The width and height attributes of <img /> provide size information
+          for images
+        </li>
+        <li>
+          The alt attribute of < img > provides an alternate text for an image
+          The style attribute is used to add styles to an element, such as
+          color, font, size, and more
+        </li>
+        <li>
+          The lang attribute of the < html > tag declares the language of the
+          Web page
+        </li>
+        <li>
+          The title attribute defines some extra information about an element
+        </li>
+      </ul>
+    </div>
+    <br />
+    <div class="mainBox" id="htmlStyle">
+      <h2>The HTML Style Attribute</h2>
+      <p>
+        Setting the style of an HTML element, can be done with the style
+        attribute.
+      </p>
+      <p>
+        The <strong>property</strong> is a CSS property. The
+        <strong>value</strong> is a CSS value.
+      </p>
+      <h2>Summary</h2>
+      <ul>
+        <li>Use the style attribute for styling HTML elements</li>
+        <li>Use background-color for background color</li>
+        <li>Use color for text colors</li>
+        <li>Use font-family for text fonts</li>
+        <li>Use font-size for text sizes</li>
+        <li>Use text-align for text alignment</li>
+      </ul>
+    </div>
+    <br />
+    <div class="mainBox" id="htmlFormatting">
+      <h2>HTML Formatting Elements</h2>
+      <p>Formatting elements were designed to display special types of text</p>
+      <ul>
+        <li>< b > - Bold text</li>
+        <li>< strong > - Important text</li>
+        <li>< i > - Italic text</li>
+        <li>< em > - Emphasized text</li>
+        <li>< mark > - Marked text</li>
+        <li>< small > - Smaller text</li>
+        <li>< del > - Deleted text</li>
+        <li>< ins > - Inserted text</li>
+        <li>< sub > - Subscript text</li>
+        <li>< sup > - Superscript text</li>
+      </ul>
+    </div>
+    <br />
+    <div class="mainBox" id="htmlQuotation">
+      <h2>HTML Quotation and Citation Elements</h2>
+      <p>
+        <strong> HTML < blockquote > for Quotations </strong>
+        <br />
+        The HTML < blockquote > element defines a section that is quoted from
+        another source.
+        <br />
+        Browsers usually indent < blockquote > elements.
+      </p>
+      <p><strong>Example:</strong></p>
+      <p>Here is a quote from WWF's website:</p>
+      <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's
+        leading conservation organization, WWF works in 100 countries and is
+        supported by 1.2 million members in the United States and close to 5
+        million globally.
+      </blockquote>
+      <p>Check HTML for formatting</p>
+      <p>you can use < q > for Short Quotations</p>
+      <h2>HTML < abbr > for Abbreviations</h2>
+      <p>
+        The HTML < abbr > tag defines an abbreviation or an acronym, like
+        "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+        <br />
+        <br />
+        Marking abbreviations can give useful information to browsers,
+        translation systems and search-engines.
+        <br />
+        <br />
+        <strong>Tip:</strong> Use the global title attribute to show the
+        description for the abbreviation/acronym when you mouse over the
+        element.
+      </p>
+      <p><strong>Example:</strong></p>
+      <p>
+        The <abbr title="World Health Organization">WHO</abbr> was founded in
+        1948.
+      </p>
+      <h2>HTML < address > for Contact Information</h2>
+      <p>
+        The HTML < address > tag defines the contact information for the
+        author/owner of a document or an article.
+        <br />
+        <br />
+        The contact information can be an email address, URL, physical address,
+        phone number, social media handle, etc.
+        <br />
+        <br />
+        The text in the < address > element usually renders in italic, and
+        browsers will always add a line break before and after the < address >
+        element.
+      </p>
+      <p><strong>Example:</strong></p>
+      <address>
+        Written by John Doe.<br />
+        Visit us at:<br />
+        Example.com<br />
+        Box 564, Disneyland<br />
+        USA
+      </address>
+      <h2>HTML < cite > for Work Title</h2>
+      <p>
+        The HTML < cite > tag defines the title of a creative work (e.g. a book,
+        a poem, a song, a movie, a painting, a sculpture, etc.).
+        <br />
+        <br />
+        <strong>Note:</strong> The HTML < cite > tag defines the title of a
+        creative work (e.g. a book, a poem, a song, a movie, a painting, a
+        sculpture, etc.).
+        <br />
+        <br />
+        The text in the < cite > element usually renders in italic.
+      </p>
+      <p><strong>Example:</strong></p>
+      <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+      <h2>HTML < bdo > for Bi-Directional Override</h2>
+      <p>
+        BDO stands for Bi-Directional Override.
+        <br />
+        <br />
+        The HTML < bdo > tag is used to override the current text direction.
+      </p>
+      <p><strong>Example:</strong></p>
+      <bdo dir="rtl">This text will be written from right to left</bdo>
+    </div>
+    <br />
+    <div class="mainBox" id="htmlLinks">
+      <h2>HTML Links - Hyperlinks</h2>
+      <p>
+        HTML links are hyperlinks.
+        <br />
+        <br />
+        You can click on a link and jump to another document.
+        <br />
+        <br />
+        When you move the mouse over a link, the mouse arrow will turn into a
+        little hand.
+        <br />
+        <br />
+        <strong>Note:</strong> A link does not have to be text. A link can be
+        and image or any other HTML element!
+      </p>
+      <h2>HTML Links - The target Attribute</h2>
+      <p>
+        By default, the linked page will be displayed in the current browser
+        window. to change this, you must specify anther target for the link.
+        <br />
+        <br />
+        The target attribute can have one of the following values:
+      </p>
+      <ul>
+        <li>
+          _self - Default. Opens the document in the same window/tab as it was
+          clicked
+        </li>
+        <li>_blank - opens the document in the new window or tab</li>
+        <li>_parent - Opens the document in a new window or tab</li>
+        <li>_top - Opens the document in the full body of the window</li>
+      </ul>
+      <h2>Absolute URLs vs. Relative URLs</h2>
+      <p>
+        A <strong>absolute URL</strong> uses a full web address in the href
+        attribute.
+        <br />
+        <br />
+        A local link (a link to a page withing the same website) is a specified
+        with a <strong>relative URL</strong> (without the "https://www" part).
+      </p>
+      <h2>Link to and Email Address</h2>
+      <p>
+        Use mailto: inside the href attributes to create a link that opens the
+        user's email program ( to let them send a new email).
+        <br />
+        <br />
+        <strong>Example:</strong>
+        <br />
+        <br />
+        < a href="mailto:someone@example.com" >Send email < /a >
+      </p>
+      <h2>Button as a Link</h2>
+      <p>
+        To use and HTML button as a link, you have to add some JavaScript code.
+        <br />
+        <br />
+        JavaScrips alls you to specify what happens at certain events, such as a
+        click of a button.
+        <br />
+        <br />
+        <strong>Example:</strong>
+        <br />
+        < button onclick="document.location='default.asp'" >HTML Tutorial<
+        /button >
+      </p>
+      <h2>Link Titles</h2>
+      <p>
+        The title attribute specifies extra information about and element. The
+        information is most often shown as a tooltip text when the mouse moves
+        over the element.
+        <br />
+        <br />
+        <strong>Example</strong>
+        <br />
+        <br />
+        < a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML
+        section" >Visit our HTML Tutorial< /a >
+      </p>
+      <h2>Summary</h2>
+      <ul>
+        <li>Use the < a > element to define a link</li>
+        <li>Use the href attribute to define the link address</li>
+        <li>
+          Use the target attribute to define where to open the linked document
+        </li>
+        <li>
+          Use the < img > element (inside < a >) to use an image as a link
+        </li>
+        <li>
+          Use the mailto: scheme inside the href attribute to create a link that
+          opens the user's email program
+        </li>
+      </ul>
+    </div>
+    <br>
+    <div class="mainBox">
+      <a href="#top" class="top">Back To Top</a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
