@@ -1,12 +1,3 @@
-/* function getAge() {
-  const currentYear = new Date().getFullYear();
-  const birthYear = document.getElementById("yearText").value;
-  const are = 'You Are: ';
-  const age = currentYear - birthYear;
-  document.getElementById("myAge").innerHTML = (are + age);
-}
-*/
-
 function getAge() {
   const currentYear = new Date().getFullYear();
   const birthYear = document.getElementById("yearText").value;
@@ -23,43 +14,50 @@ function getAge() {
   }
 }
 
-function changeColorCyan() {
-  var element = document.getElementById("cyan"),
-    style = window.getComputedStyle(element),
-    color = style.getPropertyValue("background-color");
-  if ((color = "cyan")) {
-    document.getElementById("cyan").style.backgroundColor = "red";
+document.getElementById("btCyan").addEventListener("click", invertColorCyan);
+
+document
+  .getElementById("btYellow")
+  .addEventListener("click", invertColorYellow);
+
+document
+  .getElementById("btMagenta")
+  .addEventListener("click", invertColorMagenta);
+
+document.getElementById("btBlack").addEventListener("click", invertColorBlack);
+
+function invertColorCyan() {
+  var boxColor = document.getElementById("cyan");
+  if (boxColor.style.backgroundColor === "cyan") {
+    boxColor.style.backgroundColor = "red";
   } else {
-    document.getElementById("cyan").style.backgroundColor = "cyan";
+    boxColor.style.backgroundColor = "cyan";
   }
 }
-function changeColorYellow() {
-  var element = document.getElementById("yellow"),
-    style = window.getComputedStyle(element),
-    color = style.getPropertyValue("background-color");
-  if ((color = "yellow")) {
-    document.getElementById("yellow").style.backgroundColor = "blue";
+
+function invertColorYellow() {
+  var boxColor = document.getElementById("yellow");
+  if (boxColor.style.backgroundColor === "yellow") {
+    boxColor.style.backgroundColor = "blue";
   } else {
-    document.getElementById("yellow").style.backgroundColor = "yellow";
+    boxColor.style.backgroundColor = "yellow";
   }
 }
-function changeColorMagenta() {
-  var element = document.getElementById("magenta"),
-    style = window.getComputedStyle(element),
-    color = style.getPropertyValue("background-color");
-  if ((color = "magenta")) {
-    document.getElementById("magenta").style.backgroundColor = "green";
+
+function invertColorMagenta() {
+  var boxColor = document.getElementById("magenta");
+  if (boxColor.style.backgroundColor === "magenta") {
+    boxColor.style.backgroundColor = "green";
   } else {
-    document.getElementById("magenta").style.backgroundColor = "magenta";
+    boxColor.style.backgroundColor = "magenta";
   }
 }
-function changeColorBlack() {
-  var element = document.getElementById("black"),
-    style = window.getComputedStyle(element),
-    color = style.getPropertyValue("background-color");
-  if ((color = "black")) {
-    document.getElementById("black").style.backgroundColor = "white";
+
+function invertColorBlack() {
+  var boxColor = document.getElementById("black");
+  if (boxColor.style.backgroundColor === "black") {
+    boxColor.style.backgroundColor = "white";
   } else {
-    document.getElementById("black").style.backgroundColor = "black";
+    boxColor.style.backgroundColor = "black";
   }
 }
